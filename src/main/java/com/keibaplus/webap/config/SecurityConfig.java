@@ -37,7 +37,7 @@ public class SecurityConfig {
                 // ユーザー登録前やログイン前にアクセスできるような画面を設定するため、エンドポイントの認可を設定
                 http.authorizeHttpRequests(auth -> auth
                                 .requestMatchers("/notlogin",
-                                                "/welcome",
+                                                "/",
                                                 "/login",
                                                 "/register",
                                                 "/error",

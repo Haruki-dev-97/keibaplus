@@ -13,7 +13,7 @@ public class WelcomeController {
      * 
      * @return LP画面のテンプレート
      */
-    @GetMapping("/welcome")
+    @GetMapping("/")
     public String welcome() {
         // テンプレートをreturn
         return "welcome";
