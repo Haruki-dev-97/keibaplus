@@ -48,3 +48,22 @@ async function searchSummary() {
 }
 
 window.addEventListener("load", searchSummary);
+
+document.addEventListener("DOMContentLoaded", function() {
+    const shuushiRegisteredMessage = document.getElementById("shuushiRegistered");
+    if (shuushiRegisteredMessage) {
+        setTimeout(() => {
+            const bsAlert = bootstrap.Alert.getOrCreateInstance(shuushiRegisteredMessage);
+            bsAlert.close();
+        }, 3000);
+    }
+
+    const shuushiUpdatedMessage = document.getElementById("shuushiUpdated");
+    if (shuushiUpdatedMessage) {
+        setTimeout(() => {
+            const bsAlert = bootstrap.Alert.getOrCreateInstance(shuushiUpdatedMessage);
+            bsAlert.close();
+        }, 3000);
+    }
+
+});

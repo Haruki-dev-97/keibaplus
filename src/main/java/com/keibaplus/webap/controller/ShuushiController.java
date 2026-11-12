@@ -84,7 +84,7 @@ public class ShuushiController {
         // バリデーションエラーがなければShuushiServiceの登録処理
         shuushiCommandService.createShuushi(dto);
         // 登録処理が無事完了すればトップページ画面へリダイレクト
-        return "redirect:/top";
+        return "redirect:/top?shuushiRegistered";
     }
 
     /**
@@ -158,7 +158,7 @@ public class ShuushiController {
         // バリデーションエラーがなければShuushiServiceの更新処理
         shuushiCommandService.updateShuushi(dto);
         // 更新処理が無事完了すればトップページ画面へリダイレクト
-        return "redirect:/top";
+        return "redirect:/top?shuushiUpdated";
     }
 
     /**
