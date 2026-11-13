@@ -13,7 +13,7 @@ public class UsersRegisterDto {
 
     @NotBlank(message = "ユーザーIDを入力してください")
     @Size(min = 8, max = 30, message = "ユーザーIDは8文字以上30文字以内で入力してください")
-    @Pattern(regexp = "^[a-zA-Z0-9]+$", message = "ユーザーIDは半角英数字で入力してください")
+    @Pattern(regexp = "^[a-zA-Z0-9_-]+$", message = "ユーザーIDは半角英数字・アンダースコア・ハイフンのいずれかで入力してください")
     private String userId;
 
     @NotBlank(message = "メールアドレスを入力してください")
