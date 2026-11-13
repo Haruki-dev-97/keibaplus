@@ -193,7 +193,7 @@ public class ShuushiController {
         // ShuushiServiceの削除処理
         shuushiCommandService.deleteShuushi(shuushiNo);
         // 収支一覧画面へのリダイレクトをreturn
-        return "redirect:/shuushilist";
+        return "redirect:/shuushilist?shuushiDeleted";
     }
 
 }

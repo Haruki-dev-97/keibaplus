@@ -178,3 +178,14 @@ async function downloadCsv() {
 }
 
 window.addEventListener("load", () => search(0));
+
+document.addEventListener("DOMContentLoaded", function() {
+    const shuushiDeletedMessage = document.getElementById("shuushiDeleted");
+    if (shuushiDeletedMessage) {
+        setTimeout(() => {
+            const bsAlert = bootstrap.Alert.getOrCreateInstance(shuushiDeletedMessage);
+            bsAlert.close();
+        }, 3000);
+    }
+
+});

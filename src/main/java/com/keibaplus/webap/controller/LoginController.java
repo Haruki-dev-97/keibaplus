@@ -50,22 +50,7 @@ public class LoginController {
      */
     @GetMapping("/notlogin")
     public String getNotLogin(HttpServletRequest request) {
-        // ログ出力・テンプレートをreturn
-        logger.info("未ログインエラー画面表示 uri={}", request.getRequestURI());
         return "notlogin";
-    }
-
-    /**
-     * 無認可アクセス画面の表示
-     * 
-     * @param request HTTPサーブレットリクエスト情報
-     * @return 無認可アクセスエラー画面のテンプレート
-     */
-    @GetMapping("/unauthorizedAccess")
-    public String getUnauthorizedAccess(HttpServletRequest request) {
-        // ログ出力・テンプレートをreturn
-        logger.info("無認可アクセス画面表示 uri={}", request.getRequestURI());
-        return "unauthorizedAccess";
     }
 
     /**
